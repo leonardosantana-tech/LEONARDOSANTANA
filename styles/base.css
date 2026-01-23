@@ -1,0 +1,55 @@
+/* 
+Variáveis globais (:root)
+Configurações de body, html
+Tipografia base
+Estilos globais (img, a, etc.) */
+
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= VARIÁVEIS GLOBAIS ================= */
+:root {
+  --color-primary-blue: #5db0e0;
+  --color-secondary-purple: #6a4cff;
+
+  --color-bg-light: #f9fbfd;
+  --color-text-light: #1f2933;
+
+  --color-bg-dark: #0f172a;
+  --color-text-dark: #e5e7eb;
+
+  --font-logo: "Poppins", sans-serif;
+  --font-title: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+/* ================= BASE HTML ================= */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg-light);
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* ================= ELEMENTOS GLOBAIS ================= */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}

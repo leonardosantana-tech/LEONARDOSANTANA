@@ -1,0 +1,68 @@
+/* Dark mode
+Light mode
+Classes de tema
+Ajustes de cor por tema */
+
+/* ================= DARK MODE ================= */
+body.dark {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+}
+
+/* Header */
+body.dark #header-principal {
+  background-color: #0f172a;
+  border-bottom-color: #1e293b;
+}
+
+/* Menu Mobile */
+body.dark .menu-navegacao {
+  background-color: #0f172a;
+  border-bottom-color: #1e293b;
+}
+
+body.dark .menu-navegacao a {
+  border-bottom-color: #1e293b;
+}
+
+/* Botão Menu */
+body.dark .menu-toggle {
+  color: var(--color-text-dark);
+}
+
+/* Toggles */
+body.dark .toggle-theme,
+body.dark .toggle-lang {
+  background-color: #334155;
+  border-color: #475569;
+}
+
+body.dark .toggle-theme.active {
+  background-color: var(--color-primary-blue);
+  border-color: var(--color-primary-blue);
+}
+
+/* Hero */
+body.dark .hero-section {
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+}
+
+/* Cards */
+body.dark .projeto-card,
+body.dark .certificacao-card {
+  background-color: #1e293b;
+}
+
+body.dark .card-content h3 {
+  color: var(--color-text-dark);
+}
+
+body.dark .card-content p {
+  color: #9ca3af;
+}
+
+/* Footer */
+body.dark .footer-principal {
+  background-color: #000000;
+  color: #ffffff;
+}

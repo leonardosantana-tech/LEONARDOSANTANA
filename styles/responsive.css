@@ -1,0 +1,131 @@
+/* ================= RESPONSIVIDADE ================= */
+
+@media (max-width: 768px) {
+  .tech-stack-wrapper,
+  .sobre-container,
+  .voluntario-container-main,
+  .skills-layout {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .sobre-imagem {
+    justify-content: center;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+  }
+
+  .sobre-texto {
+    text-align: center;
+  }
+  .voluntario-info {
+    text-align: center;
+  }
+  .voluntario-logos-area {
+    justify-content: center;
+  }
+
+  .text-right,
+  .text-left {
+    text-align: center;
+  }
+
+  .skills-layout {
+    flex-direction: column-reverse;
+  }
+
+  .divider-vertical {
+    width: 100%;
+    height: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.9rem;
+  }
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  .nav-container {
+    padding: 1rem;
+  }
+
+  .menu-navegacao {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-navegacao.ativo {
+    display: flex;
+  }
+
+  .menu-navegacao li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-navegacao a {
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid #f3f4f6;
+  }
+
+  .menu-navegacao a::after {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-controls-right {
+    gap: 1rem;
+  }
+
+  .nav-acoes {
+    gap: 0.5rem;
+    transform: scale(0.6);
+    transform-origin: right center;
+  }
+}
+
+/* ===== CELULAR ===== */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  .logo-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .logo-nome {
+    font-size: 1.1rem;
+  }
+
+  .hero-legenda {
+    font-size: 1.2rem;
+  }
+
+  section {
+    padding: 4rem 1rem;
+  }
+}
