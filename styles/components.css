@@ -30,12 +30,13 @@ Elementos reutilizáveis */
   transform: rotate(-10deg) scale(1.1);
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .logo-icon {
     width: 32px;
     height: 32px;
   }
-}
+} */
+/* @media deve estar presente SOMENTE no arquivo responsive.css */
 
 .logo-area {
   flex: 1;

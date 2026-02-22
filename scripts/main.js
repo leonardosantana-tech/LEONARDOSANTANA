@@ -6,33 +6,64 @@ menuToggle.addEventListener("click", () => {
 });
 
 /* ================= TOGGLE THEME ================= */
-const toggleTheme = document.getElementById("toggleTheme");
+// const toggleTheme = document.querySelectorAll(".toggle-theme")[0];
 
-toggleTheme.addEventListener("click", () => {
-  toggleTheme.classList.toggle("active");
-  document.body.classList.toggle("dark");
+// toggleTheme.addEventListener("click", () => {
+//   toggleTheme.classList.toggle("active");
+//   document.body.classList.toggle("dark");
+// });
+
+/* ================= TOGGLE THEME (Corrigido para múltiplos botões) ================= */
+const themeButtons = document.querySelectorAll(".toggle-theme");
+
+themeButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    // Sincroniza o estado visual de todos os botões de tema
+    themeButtons.forEach((b) => b.classList.toggle("active"));
+    document.body.classList.toggle("dark");
+  });
 });
 
 /* ================= TOGGLE LANGUAGE (Com Tradução) ================= */
-const toggleLang = document.getElementById("toggleLang");
+// const toggleLang = document.querySelectorAll(".toggle-lang")[0];
+// const htmlLang = document.documentElement;
+
+// toggleLang.addEventListener("click", () => {
+//   toggleLang.classList.toggle("active");
+
+//   let currentLang = "pt";
+
+//   if (toggleLang.classList.contains("active")) {
+//     htmlLang.setAttribute("lang", "en");
+//     currentLang = "en";
+//     console.log("Idioma alterado para: Inglês");
+//   } else {
+//     htmlLang.setAttribute("lang", "pt-BR");
+//     currentLang = "pt";
+//     console.log("Idioma alterado para: Português");
+//   }
+
+//   updateTexts(currentLang);
+// });
+
+const langButtons = document.querySelectorAll(".toggle-lang");
 const htmlLang = document.documentElement;
 
-toggleLang.addEventListener("click", () => {
-  toggleLang.classList.toggle("active");
+langButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    // Sincroniza o estado visual de todos os botões de idioma
+    langButtons.forEach((b) => b.classList.toggle("active"));
 
-  let currentLang = "pt";
-
-  if (toggleLang.classList.contains("active")) {
-    htmlLang.setAttribute("lang", "en");
-    currentLang = "en";
-    console.log("Idioma alterado para: Inglês");
-  } else {
-    htmlLang.setAttribute("lang", "pt-BR");
-    currentLang = "pt";
-    console.log("Idioma alterado para: Português");
-  }
-
-  updateTexts(currentLang);
+    let currentLang = "pt";
+    if (btn.classList.contains("active")) {
+      htmlLang.setAttribute("lang", "en");
+      currentLang = "en";
+    } else {
+      htmlLang.setAttribute("lang", "pt-BR");
+      currentLang = "pt";
+    }
+    updateTexts(currentLang);
+  });
 });
 
 function updateTexts(lang) {
@@ -84,4 +115,15 @@ document.addEventListener("keydown", function (event) {
   ) {
     closeModal();
   }
+});
+
+// Seleciona todos os links dentro do menu de navegação
+const linksDoMenu = document.querySelectorAll(".menu-navegacao a");
+
+// Para cada link clicado, remove a classe 'ativo' do menu
+linksDoMenu.forEach((link) => {
+  link.addEventListener("click", () => {
+    const menu = document.querySelector(".menu-navegacao");
+    menu.classList.remove("ativo");
+  });
 });

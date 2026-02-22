@@ -43,7 +43,7 @@ const translations = {
     "cert-titulo": "Certificações",
     "cert1-desc":
       "Esse curso me ajudou a aprofundar meu entendimento sobre funções SQL, consultas avançadas e o funcionamento dos SGBDs, com foco em MySQL e SQL Server.",
-    "siga-frase": "Siga o Leonardo",
+    "siga-frase": "Siga Leonardo",
   },
   en: {
     "nav-inicio": "Home",

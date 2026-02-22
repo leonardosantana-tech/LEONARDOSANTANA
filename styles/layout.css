@@ -359,69 +359,6 @@ section h3 {
   width: 100%;
 }
 
-/* ================= RESPONSIVIDADE ================= */
-
-@media (max-width: 768px) {
-  .logo-area,
-  .menu-navegacao,
-  .nav-controls-right {
-    margin: 0;
-  }
-
-  .nav-container {
-    justify-content: space-between;
-  }
-
-  .menu-navegacao {
-    display: none;
-  }
-
-  /* Seções viram coluna */
-  .hero-section,
-  .tech-stack-wrapper,
-  .sobre-container,
-  .voluntario-container-main,
-  .skills-layout {
-    flex-direction: column;
-    text-align: center;
-    gap: 2.5rem;
-  }
-
-  /* Ajustes específicos mobile */
-  .sobre-imagem {
-    justify-content: center;
-    width: 480px;
-    height: 400px;
-  }
-  .sobre-texto {
-    text-align: center;
-  }
-
-  .voluntario-info {
-    text-align: center;
-    align-items: center;
-  }
-  .voluntario-logos-area {
-    justify-content: center;
-  }
-
-  /* Skills Mobile */
-  .skills-layout {
-    flex-direction: column-reverse;
-  }
-  .text-right,
-  .text-left {
-    text-align: center;
-  }
-
-  /* Tech Stack Divider vira horizontal */
-  .divider-vertical {
-    width: 80%;
-    height: 1px;
-    margin: 0.5rem 0;
-  }
-}
-
 /* --- EFEITO SOBRE MIM --- */
 .sobre-imagem img {
   transition:
@@ -575,7 +512,7 @@ section h3 {
   }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .modal-content {
     width: 95%;
   }
@@ -583,4 +520,4 @@ section h3 {
     top: 10px;
     right: 20px;
   }
-}
+} */
