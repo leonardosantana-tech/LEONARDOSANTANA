@@ -6,14 +6,6 @@ menuToggle.addEventListener("click", () => {
 });
 
 /* ================= TOGGLE THEME ================= */
-// const toggleTheme = document.querySelectorAll(".toggle-theme")[0];
-
-// toggleTheme.addEventListener("click", () => {
-//   toggleTheme.classList.toggle("active");
-//   document.body.classList.toggle("dark");
-// });
-
-/* ================= TOGGLE THEME (Corrigido para múltiplos botões) ================= */
 const themeButtons = document.querySelectorAll(".toggle-theme");
 
 themeButtons.forEach((btn) => {
@@ -25,26 +17,6 @@ themeButtons.forEach((btn) => {
 });
 
 /* ================= TOGGLE LANGUAGE (Com Tradução) ================= */
-// const toggleLang = document.querySelectorAll(".toggle-lang")[0];
-// const htmlLang = document.documentElement;
-
-// toggleLang.addEventListener("click", () => {
-//   toggleLang.classList.toggle("active");
-
-//   let currentLang = "pt";
-
-//   if (toggleLang.classList.contains("active")) {
-//     htmlLang.setAttribute("lang", "en");
-//     currentLang = "en";
-//     console.log("Idioma alterado para: Inglês");
-//   } else {
-//     htmlLang.setAttribute("lang", "pt-BR");
-//     currentLang = "pt";
-//     console.log("Idioma alterado para: Português");
-//   }
-
-//   updateTexts(currentLang);
-// });
 
 const langButtons = document.querySelectorAll(".toggle-lang");
 const htmlLang = document.documentElement;
