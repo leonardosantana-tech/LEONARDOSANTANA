@@ -43,6 +43,10 @@ const translations = {
     "cert-titulo": "Certificações",
     "cert1-desc":
       "Esse curso me ajudou a aprofundar meu entendimento sobre funções SQL, consultas avançadas e o funcionamento dos SGBDs, com foco em MySQL e SQL Server.",
+    "cert2-desc":
+      "Esse curso me ajudou a compreender a integração com APIs da OpenAI, Hugging Face e LangChain, além da criação de chatbots com memória e aplicações com interface em Streamlit.",
+    "cert3-desc":
+      "Esse curso me fez entender a lógica de programação, iniciando com Portugol para desenvolver o raciocínio lógico e evoluindo para a prática da programação.",
     "siga-frase": "Siga Leonardo",
   },
   en: {
@@ -90,6 +94,10 @@ const translations = {
     "cert-titulo": "Certifications",
     "cert1-desc":
       "This course helped me deepen my understanding of SQL functions, advanced queries, and DBMS operations, focusing on MySQL and SQL Server.",
+    "cert2-desc":
+      "This course helped me understand how to integrate with OpenAI, Hugging Face, and LangChain APIs, as well as build chatbots with memory and applications using Streamlit.",
+    "cert3-desc":
+      "This course helped me understand programming logic, starting with Portugol to develop logical thinking and progressing to practical programming.",
     "siga-frase": "Follow Leonardo",
   },
 };
