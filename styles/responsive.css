@@ -185,4 +185,11 @@
   .hero-legenda {
     font-size: 1.2rem;
   }
+
+  /* NOVO CODIGO 18 DO 4 */
+  footer {
+    padding: 50rem 50rem;
+    min-height: auto;
+    text-align: center;
+  }
 }
