@@ -114,6 +114,14 @@
     gap: 2rem;
   }
 
+  .tech-stack-wrapper {
+    flex-direction: column;
+    text-align: center; /* Alterado de left para center */
+    align-items: center; /* Garante que os itens fiquem no meio */
+    gap: 1rem;
+    width: 90%; /* Ajuste para não ficar colado na borda */
+  }
+
   .text-right,
   .text-left,
   .sobre-texto,
