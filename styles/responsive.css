@@ -117,9 +117,26 @@
   .tech-stack-wrapper {
     flex-direction: column;
     text-align: center; /* Alterado de left para center */
-    align-items: center; /* Garante que os itens fiquem no meio */
+    align-items: center;
     gap: 1rem;
-    width: 90%; /* Ajuste para não ficar colado na borda */
+    width: 90%;
+  }
+
+  .sobre-container {
+    width: 80% !important; /* Aumenta a largura ocupada pelo container */
+    max-width: none;
+    gap: 1.5rem;
+  }
+
+  .sobre-texto {
+    width: 100%;
+    text-align: justify;
+    padding: 0 10px;
+  }
+
+  .sobre-texto p {
+    font-size: 1rem;
+    line-height: 1.5;
   }
 
   .text-right,
@@ -146,8 +163,27 @@
     justify-content: flex-start;
   }
 
-  .skills-layout {
+  /* .skills-layout {
     flex-direction: column-reverse;
+  } */
+
+  /* Procure a classe .skills-layout e substitua */
+  .skills-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; /* Reduzido de 2rem para 1.5rem */
+    width: 85%; /* Reduzido de 100% para 85% para aproximar do centro */
+    max-width: 1000px; /* Limite para não espalhar em monitores muito grandes */
+    margin: 2rem auto 0 auto;
+  }
+
+  /* Ajuste na imagem central para ela não ocupar espaço excessivo */
+  .skills-center-img img {
+    width: 100%;
+    max-width: 380px; /* Reduzido de 480px para 380px para diminuir o distanciamento */
+    height: auto;
+    animation: float 6s ease-in-out infinite;
   }
 
   .divider-vertical {
