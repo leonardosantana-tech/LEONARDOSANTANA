@@ -163,6 +163,35 @@
     justify-content: flex-start;
   }
 
+  /* Dentro de @media (max-width: 768px) */
+
+  .voluntario-container-main {
+    display: flex;
+    flex-direction: column; /* Garante que os itens fiquem um abaixo do outro */
+    gap: 2rem;
+  }
+
+  .voluntario-info {
+    /* O texto e logos agora assumem a segunda posição (abaixo das fotos) */
+    order: 2;
+    text-align: left;
+  }
+
+  .voluntario-grid-fotos {
+    /* As imagens assumem a primeira posição (logo abaixo do título da seção) */
+    order: 1;
+    width: 100%;
+    grid-template-rows: repeat(
+      2,
+      150px
+    ); /* Mantém o grid de fotos organizado */
+  }
+
+  /* Ajuste opcional para o título não ficar grudado nas fotos */
+  #voluntario h2 {
+    margin-bottom: 1.5rem;
+  }
+
   /* .skills-layout {
     flex-direction: column-reverse;
   } */
