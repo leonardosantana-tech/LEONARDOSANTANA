@@ -10,9 +10,16 @@ Responsividade (@media) */
   top: 0;
   width: 100%;
   background: white;
+  background-color: white; /* NOVIDADE PARA GARANTIR QUE EXISTA A BARRA */
   z-index: 1000;
   border-bottom: 1px solid #e5e7eb;
   transition: background-color 0.3s ease;
+}
+
+/* No Dark Mode (em themes.css) */
+body.dark #header-principal {
+  background-color: #0f172a; /* Cor do seu fundo dark */
+  border-bottom-color: #1e293b;
 }
 
 .nav-container {
