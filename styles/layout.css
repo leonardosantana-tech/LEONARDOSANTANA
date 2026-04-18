@@ -256,6 +256,7 @@ section h3 {
   display: flex;
   gap: 1.5rem;
   margin-top: 1rem;
+  margin-left: -10.5px;
 }
 
 .logo-parceiro {
