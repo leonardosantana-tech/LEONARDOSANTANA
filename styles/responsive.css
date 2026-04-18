@@ -163,8 +163,6 @@
     justify-content: flex-start;
   }
 
-  /* Dentro de @media (max-width: 768px) */
-
   .voluntario-container-main {
     display: flex;
     flex-direction: column; /* Garante que os itens fiquem um abaixo do outro */
@@ -172,7 +170,7 @@
   }
 
   .voluntario-info {
-    /* O texto e logos agora assumem a segunda posição (abaixo das fotos) */
+    /* O texto e logos ficam abaixo das fotos */
     order: 2;
     text-align: left;
   }
@@ -187,22 +185,20 @@
     ); /* Mantém o grid de fotos organizado */
   }
 
-  /* Ajuste opcional para o título não ficar grudado nas fotos */
   #voluntario h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   /* .skills-layout {
     flex-direction: column-reverse;
   } */
 
-  /* Procure a classe .skills-layout e substitua */
   .skills-layout {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem; /* Reduzido de 2rem para 1.5rem */
-    width: 85%; /* Reduzido de 100% para 85% para aproximar do centro */
+    gap: 1.5rem;
+    width: 85%;
     max-width: 1000px; /* Limite para não espalhar em monitores muito grandes */
     margin: 2rem auto 0 auto;
   }
@@ -210,7 +206,7 @@
   /* Ajuste na imagem central para ela não ocupar espaço excessivo */
   .skills-center-img img {
     width: 100%;
-    max-width: 380px; /* Reduzido de 480px para 380px para diminuir o distanciamento */
+    max-width: 380px; /* Redução para diminuir o distanciamento */
     height: auto;
     animation: float 6s ease-in-out infinite;
   }
@@ -221,7 +217,6 @@
     margin: 0.5rem 0;
   }
 
-  /* Modais */
   .modal-content {
     width: 95%;
   }
