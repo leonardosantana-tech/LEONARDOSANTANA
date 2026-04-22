@@ -82,6 +82,10 @@
     padding-top: 2rem;
     margin-top: 1rem;
     border-top: 1px solid #ccc;
+    /* NOVIDADES ABAIXO */
+    border-top: none !important; /* Remove a linha */
+    padding-top: 1rem;
+    margin-top: 0;
   }
 
   .nav-container {
@@ -114,6 +118,31 @@
     gap: 2rem;
   }
 
+  .tech-stack-wrapper {
+    flex-direction: column;
+    text-align: center; /* Alterado de left para center */
+    align-items: center;
+    gap: 1rem;
+    width: 90%;
+  }
+
+  .sobre-container {
+    width: 80% !important; /* Aumenta a largura ocupada pelo container */
+    max-width: none;
+    gap: 1.5rem;
+  }
+
+  .sobre-texto {
+    width: 100%;
+    text-align: justify;
+    padding: 0 10px;
+  }
+
+  .sobre-texto p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
   .text-right,
   .text-left,
   .sobre-texto,
@@ -138,8 +167,52 @@
     justify-content: flex-start;
   }
 
-  .skills-layout {
+  .voluntario-container-main {
+    display: flex;
+    flex-direction: column; /* Garante que os itens fiquem um abaixo do outro */
+    gap: 2rem;
+  }
+
+  .voluntario-info {
+    /* O texto e logos ficam abaixo das fotos */
+    order: 2;
+    text-align: left;
+  }
+
+  .voluntario-grid-fotos {
+    /* As imagens assumem a primeira posição (logo abaixo do título da seção) */
+    order: 1;
+    width: 100%;
+    grid-template-rows: repeat(
+      2,
+      150px
+    ); /* Mantém o grid de fotos organizado */
+  }
+
+  #voluntario h2 {
+    margin-bottom: 3rem;
+  }
+
+  /* .skills-layout {
     flex-direction: column-reverse;
+  } */
+
+  .skills-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 85%;
+    max-width: 1000px; /* Limite para não espalhar em monitores muito grandes */
+    margin: 2rem auto 0 auto;
+  }
+
+  /* Ajuste na imagem central para ela não ocupar espaço excessivo */
+  .skills-center-img img {
+    width: 100%;
+    max-width: 380px; /* Redução para diminuir o distanciamento */
+    height: auto;
+    animation: float 6s ease-in-out infinite;
   }
 
   .divider-vertical {
@@ -148,7 +221,6 @@
     margin: 0.5rem 0;
   }
 
-  /* Modais */
   .modal-content {
     width: 95%;
   }
@@ -184,5 +256,12 @@
 
   .hero-legenda {
     font-size: 1.2rem;
+  }
+
+  /* NOVO CODIGO 18 DO 4 */
+  footer {
+    padding: 50rem 50rem;
+    min-height: auto;
+    text-align: center;
   }
 }
