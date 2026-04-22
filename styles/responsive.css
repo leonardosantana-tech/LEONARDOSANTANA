@@ -82,6 +82,10 @@
     padding-top: 2rem;
     margin-top: 1rem;
     border-top: 1px solid #ccc;
+    /* NOVIDADES ABAIXO */
+    border-top: none !important; /* Remove a linha */
+    padding-top: 1rem;
+    margin-top: 0;
   }
 
   .nav-container {
