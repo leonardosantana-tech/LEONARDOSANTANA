@@ -28,6 +28,9 @@ const translations = {
     "proj3-desc":
       "Utilizando as bibliotecas pyautogui para automação e pandas para análise de dados, esse projeto me ensinou que, ao automatizar uma tarefa, ganhamos TEMPO ÚTIL!",
     "voluntario-titulo": "Trabalho Voluntário",
+    "proj4-titulo": "SITE DO ROTARACT ⚙️🙋‍♂️",
+    "proj4-desc":
+      "Este é um projeto desenvolvido em Next.js, no qual atuei com código legado ao lado do meu amigo Lucas Gois, contribuindo com melhorias e implementação de novas funcionalidades.",
     "voluntario-p1":
       "Engajado em causas sociais, participo ativamente das ações sociais do Rotaract Club, onde desenvolvemos projetos voltados à distribuição de cestas básicas, promoção do bem-estar de grupos em situação de vulnerabilidade e entre outros.",
     "voluntario-p2":
@@ -78,6 +81,10 @@ const translations = {
     "proj3-titulo": "REPORT AUTOMATION 🐍🐼",
     "proj3-desc":
       "Using pyautogui for automation and pandas for data analysis, this project taught me that by automating a task, we gain USEFUL TIME!",
+    "proj4-titulo": "ROTARACT WEBSITE ⚙️🙋‍♂️",
+    "proj4-desc":
+      "This is a project built with Next.js, where I worked with legacy code alongside my friend Lucas Gois, contributing with improvements and the implementation of new features.",
+
     "voluntario-titulo": "Volunteer Work",
     "voluntario-p1":
       "Engaged in social causes, I actively participate in Rotaract Club social actions, where we develop projects focused on distributing basic food baskets, promoting the well-being of vulnerable groups, and others.",
